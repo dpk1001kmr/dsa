@@ -12,6 +12,7 @@ import { printDecreasing } from "./recursion/printDecreasing.js";
 import { printDecreasingIncreasing } from "./recursion/printDecreasingIncreasing.js";
 import { printIncreasing } from "./recursion/printIncreasing.js";
 import { printZigZag } from "./recursion/printZigZag.js";
+import { stairPath } from "./recursion/stairPath.js";
 import { subsequence } from "./recursion/subsequence.js";
 import { toh } from "./recursion/toh.js";
 
@@ -31,3 +32,4 @@ import { toh } from "./recursion/toh.js";
 // console.log(allIndices([1, 2, 3, 4, 2, 5, 2, 6, 2], 0, 2, 0));
 // console.log(subsequence("abcde"));
 // console.log(keypadCombination("19"));
+// console.log(stairPath(7));
