@@ -1,6 +1,7 @@
 import { allIndices } from "./recursion/allIndices.js";
 import { factorial } from "./recursion/factorial.js";
 import { firstIndex } from "./recursion/firstIndex.js";
+import { keypadCombination } from "./recursion/keypadCombination.js";
 import { lastIndex } from "./recursion/lastIndex.js";
 import { maxOfArray } from "./recursion/maxOfArray.js";
 import { minOfArray } from "./recursion/minOfArray.js";
@@ -29,3 +30,4 @@ import { toh } from "./recursion/toh.js";
 // console.log(lastIndex([1, 2, 3, 4, 2, 5, 6], 0, 2));
 // console.log(allIndices([1, 2, 3, 4, 2, 5, 2, 6, 2], 0, 2, 0));
 // console.log(subsequence("abcde"));
+// console.log(keypadCombination("19"));
