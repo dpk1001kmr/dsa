@@ -1,3 +1,4 @@
+import { printMazePath } from "./printMazePath.js";
 import { allIndices } from "./recursion/allIndices.js";
 import { factorial } from "./recursion/factorial.js";
 import { firstIndex } from "./recursion/firstIndex.js";
@@ -14,6 +15,7 @@ import { printDecreasing } from "./recursion/printDecreasing.js";
 import { printDecreasingIncreasing } from "./recursion/printDecreasingIncreasing.js";
 import { printIncreasing } from "./recursion/printIncreasing.js";
 import { printKeypadCombination } from "./recursion/printKeypadCombination.js";
+import { printMazePathWithJump } from "./recursion/printMazePathWithJump.js";
 import { printStairPath } from "./recursion/printStairPath.js";
 import { printSubsequence } from "./recursion/printSubsequence.js";
 import { printZigZag } from "./recursion/printZigZag.js";
@@ -43,3 +45,5 @@ import { toh } from "./recursion/toh.js";
 // printSubsequence("abcd", "");
 // printKeypadCombination("123", "");
 // printStairPath(5, "");
+// printMazePath(1, 1, 3, 3, "");
+// printMazePathWithJump(1, 1, 3, 3, "");
