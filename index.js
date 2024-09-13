@@ -16,6 +16,7 @@ import { printDecreasingIncreasing } from "./recursion/printDecreasingIncreasing
 import { printIncreasing } from "./recursion/printIncreasing.js";
 import { printKeypadCombination } from "./recursion/printKeypadCombination.js";
 import { printMazePathWithJump } from "./recursion/printMazePathWithJump.js";
+import { printPermutation } from "./recursion/printPermutation.js";
 import { printStairPath } from "./recursion/printStairPath.js";
 import { printSubsequence } from "./recursion/printSubsequence.js";
 import { printZigZag } from "./recursion/printZigZag.js";
@@ -47,3 +48,4 @@ import { toh } from "./recursion/toh.js";
 // printStairPath(5, "");
 // printMazePath(1, 1, 3, 3, "");
 // printMazePathWithJump(1, 1, 3, 3, "");
+// printPermutation("12345", "");
