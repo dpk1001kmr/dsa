@@ -2,6 +2,7 @@ import { printMazePath } from "./printMazePath.js";
 import { allIndices } from "./recursion/allIndices.js";
 import { factorial } from "./recursion/factorial.js";
 import { firstIndex } from "./recursion/firstIndex.js";
+import { floodFill } from "./recursion/floodFill.js";
 import { keypadCombination } from "./recursion/keypadCombination.js";
 import { lastIndex } from "./recursion/lastIndex.js";
 import { maxOfArray } from "./recursion/maxOfArray.js";
@@ -49,3 +50,25 @@ import { toh } from "./recursion/toh.js";
 // printMazePath(1, 1, 3, 3, "");
 // printMazePathWithJump(1, 1, 3, 3, "");
 // printPermutation("12345", "");
+
+// const maze = [
+//   [0, 1, 0, 0, 0, 1, 0],
+//   [0, 1, 0, 0, 1, 0, 1],
+//   [0, 0, 0, 0, 0, 0, 0],
+//   [0, 1, 1, 1, 0, 0, 1],
+//   [0, 0, 0, 1, 1, 1, 0],
+//   [0, 0, 0, 0, 0, 0, 1],
+//   [0, 0, 1, 0, 1, 0, 0],
+// ];
+
+// const visited = [
+//   [false, false, false, false, false, false, false],
+//   [false, false, false, false, false, false, false],
+//   [false, false, false, false, false, false, false],
+//   [false, false, false, false, false, false, false],
+//   [false, false, false, false, false, false, false],
+//   [false, false, false, false, false, false, false],
+//   [false, false, false, false, false, false, false],
+// ];
+
+// floodFill(maze, 0, 0, "", visited);
