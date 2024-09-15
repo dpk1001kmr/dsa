@@ -1,3 +1,8 @@
+import { countDigits } from "./basics/countDigits.js";
+import { grading } from "./basics/grading.js";
+import { isPrime } from "./basics/isPrime.js";
+import { printFibonacciTill } from "./basics/printFibonacciTill.js";
+import { printPrimeBetween } from "./basics/printPrimeBetween.js";
 import { printMazePath } from "./printMazePath.js";
 import { allIndices } from "./recursion/allIndices.js";
 import { factorial } from "./recursion/factorial.js";
@@ -24,6 +29,12 @@ import { printZigZag } from "./recursion/printZigZag.js";
 import { stairPath } from "./recursion/stairPath.js";
 import { subsequence } from "./recursion/subsequence.js";
 import { toh } from "./recursion/toh.js";
+
+// console.log(grading(75));
+// console.log(isPrime(7));
+// printPrimeBetween(1000, 2000);
+// printFibonacciTill(10);
+// console.log(countDigits(561906700));
 
 // printIncreasing(5);
 // printDecreasing(5);
