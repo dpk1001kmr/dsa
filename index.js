@@ -6,6 +6,7 @@ import { printDigitsOfNumber } from "./basics/printDigitsOfNumber.js";
 import { printDigitsOfNumberInReverse } from "./basics/printDigitsOfNumberInReverse.js";
 import { printFibonacciTill } from "./basics/printFibonacciTill.js";
 import { printPrimeBetween } from "./basics/printPrimeBetween.js";
+import { rotateNumber } from "./basics/rotateNumber.js";
 import { printMazePath } from "./printMazePath.js";
 import { allIndices } from "./recursion/allIndices.js";
 import { factorial } from "./recursion/factorial.js";
@@ -41,6 +42,7 @@ import { toh } from "./recursion/toh.js";
 // printDigitsOfNumber(1001);
 // printDigitsOfNumberInReverse(10101010);
 // console.log(inverseOfNumber(312465));
+console.log(rotateNumber(12345, 2));
 
 // printIncreasing(5);
 // printDecreasing(5);
