@@ -1,7 +1,9 @@
 import { countDigits } from "./basics/countDigits.js";
 import { grading } from "./basics/grading.js";
+import { inverseOfNumber } from "./basics/inverseOfNumber.js";
 import { isPrime } from "./basics/isPrime.js";
 import { printDigitsOfNumber } from "./basics/printDigitsOfNumber.js";
+import { printDigitsOfNumberInReverse } from "./basics/printDigitsOfNumberInReverse.js";
 import { printFibonacciTill } from "./basics/printFibonacciTill.js";
 import { printPrimeBetween } from "./basics/printPrimeBetween.js";
 import { printMazePath } from "./printMazePath.js";
@@ -37,6 +39,8 @@ import { toh } from "./recursion/toh.js";
 // printFibonacciTill(10);
 // console.log(countDigits(561906700));
 // printDigitsOfNumber(1001);
+// printDigitsOfNumberInReverse(10101010);
+// console.log(inverseOfNumber(312465));
 
 // printIncreasing(5);
 // printDecreasing(5);
