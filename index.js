@@ -1,11 +1,15 @@
 import { countDigits } from "./basics/countDigits.js";
+import { gcd } from "./basics/gcd.js";
 import { grading } from "./basics/grading.js";
 import { inverseOfNumber } from "./basics/inverseOfNumber.js";
 import { isPrime } from "./basics/isPrime.js";
+import { isPythagoreanTriplets } from "./basics/isPythagoreanTriplets.js";
+import { lcm } from "./basics/lcm.js";
 import { printDigitsOfNumber } from "./basics/printDigitsOfNumber.js";
 import { printDigitsOfNumberInReverse } from "./basics/printDigitsOfNumberInReverse.js";
 import { printFibonacciTill } from "./basics/printFibonacciTill.js";
 import { printPrimeBetween } from "./basics/printPrimeBetween.js";
+import { printPrimeFactor } from "./basics/printPrimeFactor.js";
 import { rotateNumber } from "./basics/rotateNumber.js";
 import { printMazePath } from "./printMazePath.js";
 import { allIndices } from "./recursion/allIndices.js";
@@ -42,7 +46,11 @@ import { toh } from "./recursion/toh.js";
 // printDigitsOfNumber(1001);
 // printDigitsOfNumberInReverse(10101010);
 // console.log(inverseOfNumber(312465));
-console.log(rotateNumber(12345, 2));
+// console.log(rotateNumber(12345, 2));
+// console.log(gcd(24, 32));
+// console.log(lcm(32, 24));
+// printPrimeFactor(240);
+// console.log(isPythagoreanTriplets(3, 4, 5));
 
 // printIncreasing(5);
 // printDecreasing(5);
