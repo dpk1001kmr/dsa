@@ -1,4 +1,10 @@
+import { differenceOfTwoArray } from "./array/differenceOfTwoArray.js";
+import { linearSearch } from "./array/linearSearch.js";
+import { printBarChart } from "./array/printBarChart.js";
+import { spanOfArray } from "./array/spanOfArray.js";
+import { sumOfTwoArray } from "./array/sumOfTwoArray.js";
 import { countDigits } from "./basics/countDigits.js";
+import { digitFrequency } from "./basics/digitFrequency.js";
 import { gcd } from "./basics/gcd.js";
 import { grading } from "./basics/grading.js";
 import { inverseOfNumber } from "./basics/inverseOfNumber.js";
@@ -37,6 +43,11 @@ import { printZigZag } from "./recursion/printZigZag.js";
 import { stairPath } from "./recursion/stairPath.js";
 import { subsequence } from "./recursion/subsequence.js";
 import { toh } from "./recursion/toh.js";
+import { Stack } from "./stack/stack.js";
+
+/**
+ * basics
+ */
 
 // console.log(grading(75));
 // console.log(isPrime(7));
@@ -51,6 +62,42 @@ import { toh } from "./recursion/toh.js";
 // console.log(lcm(32, 24));
 // printPrimeFactor(240);
 // console.log(isPythagoreanTriplets(3, 4, 5));
+// console.log(digitFrequency(252221224322222, 2));
+
+/**
+ * array
+ */
+
+// console.log(spanOfArray([1, 2, 3, 4, 5]));
+// console.log(linearSearch([1, 2, 3, 4, 5], 3));
+// printBarChart([5, 3, 7, 2, 1, 6, 4]);
+// console.log(sumOfTwoArray([9, 0, 9], [6, 9, 8, 8]));
+// console.log(differenceOfTwoArray([1, 0, 0, 0, 0, 0], [1]));
+
+/**
+ * stack
+ */
+
+// const stack = new Stack();
+// console.log(stack);
+// stack.push(1);
+// stack.push(2);
+// stack.push(3);
+// stack.push(4);
+// stack.push(5);
+// console.log(stack);
+// console.log(stack.length());
+// console.log(stack.top());
+// stack.pop();
+// stack.pop();
+// console.log(stack.pop());
+// console.log(stack);
+// console.log(stack.length());
+// console.log(stack.top());
+
+/**
+ * recursion
+ */
 
 // printIncreasing(5);
 // printDecreasing(5);
@@ -58,7 +105,7 @@ import { toh } from "./recursion/toh.js";
 // printDecreasingIncreasing(5);
 // console.log(factorial(6));
 // console.log(power(2, 5));
-// toh(5, "A", "B", "C");
+// toh(4, "A", "B", "C");
 // printArray([1, 2, 3, 4, 5], 0);
 // printArrayReverse([1, 2, 3, 4, 5], 0);
 // console.log(maxOfArray([1, 20, 5, 30, 40], 0));
