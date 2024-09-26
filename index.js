@@ -17,6 +17,7 @@ import { printFibonacciTill } from "./basics/printFibonacciTill.js";
 import { printPrimeBetween } from "./basics/printPrimeBetween.js";
 import { printPrimeFactor } from "./basics/printPrimeFactor.js";
 import { rotateNumber } from "./basics/rotateNumber.js";
+import { LinkedList } from "./linkedlist/linkedlist.js";
 import { printMazePath } from "./printMazePath.js";
 import { allIndices } from "./recursion/allIndices.js";
 import { factorial } from "./recursion/factorial.js";
@@ -43,10 +44,12 @@ import { printZigZag } from "./recursion/printZigZag.js";
 import { stairPath } from "./recursion/stairPath.js";
 import { subsequence } from "./recursion/subsequence.js";
 import { toh } from "./recursion/toh.js";
+import { balancedBracket } from "./stack/balancedBracket.js";
+import { duplicateBracket } from "./stack/duplicateBracket.js";
 import { Stack } from "./stack/stack.js";
 
 /**
- * basics
+ * ********** basics **********
  */
 
 // console.log(grading(75));
@@ -65,7 +68,7 @@ import { Stack } from "./stack/stack.js";
 // console.log(digitFrequency(252221224322222, 2));
 
 /**
- * array
+ * ********** array **********
  */
 
 // console.log(spanOfArray([1, 2, 3, 4, 5]));
@@ -75,7 +78,7 @@ import { Stack } from "./stack/stack.js";
 // console.log(differenceOfTwoArray([1, 0, 0, 0, 0, 0], [1]));
 
 /**
- * stack
+ * ********** stack **********
  */
 
 // const stack = new Stack();
@@ -94,9 +97,11 @@ import { Stack } from "./stack/stack.js";
 // console.log(stack);
 // console.log(stack.length());
 // console.log(stack.top());
+// console.log(duplicateBracket("(a+b)*((a-b))"));
+// console.log(balancedBracket("[(a+b)+{(c+d)*(e/f)}]"));
 
 /**
- * recursion
+ * ********** recursion **********
  */
 
 // printIncreasing(5);
@@ -146,3 +151,25 @@ import { Stack } from "./stack/stack.js";
 // ];
 
 // floodFill(maze, 0, 0, "", visited);
+
+/**
+ * ********** linkedlist **********
+ */
+
+const linkedList = new LinkedList();
+linkedList.addLast(1);
+linkedList.addLast(2);
+linkedList.addLast(3);
+linkedList.addLast(4);
+linkedList.addLast(5);
+// linkedList.removeFirst();
+// console.log(linkedList.getFirst());
+// console.log(linkedList.getLast());
+// console.log(linkedList.getAt(3));
+// linkedList.addFirst(10);
+// linkedList.addFirst(1);
+// linkedList.addAt(3, 10);
+// linkedList.removeLast();
+// linkedList.removeAt(3);
+// console.log(linkedList.length());
+linkedList.display();
