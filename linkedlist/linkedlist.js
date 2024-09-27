@@ -12,24 +12,6 @@ export class LinkedList {
     this.size = 0;
   }
 
-  addLast(data) {
-    if (this.size === 0) {
-      const temp = new Node(data);
-      this.head = temp;
-      this.tail = temp;
-      this.size++;
-    } else {
-      const temp = new Node(data);
-      this.tail.next = temp;
-      this.tail = temp;
-      this.size++;
-    }
-  }
-
-  length() {
-    return this.size;
-  }
-
   display() {
     let temp = this.head;
     while (temp) {
@@ -38,17 +20,8 @@ export class LinkedList {
     }
   }
 
-  removeFirst() {
-    if (this.size === 0) {
-      console.log("[[LinkedList is Empty]]");
-    } else if (this.size === 1) {
-      this.head = null;
-      this.tail = null;
-      this.size = 0;
-    } else {
-      this.head = this.head.next;
-      this.size--;
-    }
+  length() {
+    return this.size;
   }
 
   getFirst() {
@@ -99,6 +72,20 @@ export class LinkedList {
     }
   }
 
+  addLast(data) {
+    if (this.size === 0) {
+      const temp = new Node(data);
+      this.head = temp;
+      this.tail = temp;
+      this.size++;
+    } else {
+      const temp = new Node(data);
+      this.tail.next = temp;
+      this.tail = temp;
+      this.size++;
+    }
+  }
+
   addAt(index, data) {
     if (index < 0 || index > this.size) {
       console.log("[[Invalid Arguments]]");
@@ -115,6 +102,19 @@ export class LinkedList {
       node.next = temp.next;
       temp.next = node;
       this.size++;
+    }
+  }
+
+  removeFirst() {
+    if (this.size === 0) {
+      console.log("[[LinkedList is Empty]]");
+    } else if (this.size === 1) {
+      this.head = null;
+      this.tail = null;
+      this.size = 0;
+    } else {
+      this.head = this.head.next;
+      this.size--;
     }
   }
 
@@ -151,5 +151,46 @@ export class LinkedList {
       temp.next = temp.next.next;
       this.size--;
     }
+  }
+
+  #getNodeAt(index) {
+    let temp = this.head;
+    for (let i = 0; i < index; i++) {
+      temp = temp.next;
+    }
+    return temp;
+  }
+
+  reverseDataIterative() {
+    let leftIndex = 0;
+    let rightIndex = this.size - 1;
+
+    while (leftIndex < rightIndex) {
+      const leftNode = this.#getNodeAt(leftIndex);
+      const rightNode = this.#getNodeAt(rightIndex);
+
+      let temp = leftNode.data;
+      leftNode.data = rightNode.data;
+      rightNode.data = temp;
+
+      leftIndex++;
+      rightIndex--;
+    }
+  }
+
+  reversePointerIterative() {
+    let previous = null;
+    let current = this.head;
+
+    while (current) {
+      let next = current.next;
+      current.next = previous;
+      previous = current;
+      current = next;
+    }
+
+    let temp = this.head;
+    this.head = this.tail;
+    this.tail = temp;
   }
 }
